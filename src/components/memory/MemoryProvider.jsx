@@ -97,7 +97,7 @@ export const MemoryContextProvider = ({ children }) => {
             return card;
           })
         );
-        if (isPair) {
+        if (isPair && isMultiplayer) {
           activePlayer.score += 1;
           const otherPlayer = players.find(
             (player) => player.id !== activePlayer.id
