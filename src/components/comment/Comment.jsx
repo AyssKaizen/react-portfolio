@@ -8,7 +8,7 @@ export const Comment = ({ username, comment, createdAt }) => {
   return (
     <fieldset className="flex flex-col justify-between p-4 pt-2 border-opacity-25 rounded-md bg-paper">
       <legend className="text-sm text-primary">{username}</legend>
-      <Typography variant="body2" className="break-all">
+      <Typography variant="body2" className="break-words">
         {comment}
       </Typography>
       <Typography

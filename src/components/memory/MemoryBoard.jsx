@@ -88,7 +88,7 @@ export const MemoryBoard = () => {
           )}
         </div>
       )}
-      <div className="grid grid-cols-6 grid-rows-6 gap-2 w-max">
+      <div className="grid grid-cols-6 grid-rows-6 gap-5 w-max">
         {gameAllowed() &&
           cards.map((card) => (
             <MemoryCard
