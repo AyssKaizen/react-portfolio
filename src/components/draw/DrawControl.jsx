@@ -11,7 +11,7 @@ export const DrawControl = ({
         htmlFor="draw-color-picker"
         className="flex items-center justify-center gap-4"
       >
-        Color
+        Couleur
         <input
           id="draw-color-picker"
           type="color"
@@ -25,7 +25,7 @@ export const DrawControl = ({
         htmlFor="draw-size-picker"
         className="flex items-center justify-center gap-4"
       >
-        Line size
+        épaisseur du crayon
         <input
           id="draw-size-picker"
           type="range"

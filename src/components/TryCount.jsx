@@ -6,8 +6,8 @@ export const TryCount = () => {
   if (isFinish)
     return (
       <Typography variant="h3">
-        Well done ! you finished in {tryCount} tries
+        Bien joué ! tu as finis le jeu en {tryCount} essais
       </Typography>
     );
-  return <Typography>You tried {tryCount} time(s)</Typography>;
+  return <Typography>Vous avez fait {tryCount} essais</Typography>;
 };

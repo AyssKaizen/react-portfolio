@@ -27,7 +27,7 @@ export const MemoryBoard = () => {
   if (!cards) {
     return (
       <Typography variant="body2">
-        An error occurs, there is no board.
+        Une erreur est survenue, impossibel d'afficher le plateau de jeu.
       </Typography>
     );
   }

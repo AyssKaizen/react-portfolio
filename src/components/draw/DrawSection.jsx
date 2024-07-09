@@ -3,7 +3,7 @@ import { Draw } from "./Draw";
 
 export const DrawSection = () => {
   return (
-    <SectionWrapper title="Draw me something ! ✍🏼">
+    <SectionWrapper title="✍🏼 Faites parler votre créativité, Dessinez">
       <Draw />
     </SectionWrapper>
   );

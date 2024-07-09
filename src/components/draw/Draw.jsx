@@ -18,8 +18,8 @@ export const Draw = () => {
         changeSize={changeSize}
       />
       <div className="flex gap-4 m-auto">
-        <Button onClick={resetCanvas}>Reset</Button>
-        <Button onClick={saveDrawing}>Save my drawing</Button>
+        <Button onClick={resetCanvas}>Réinitialiser</Button>
+        <Button onClick={saveDrawing}>Enregister</Button>
       </div>
     </div>
   );

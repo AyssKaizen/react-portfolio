@@ -59,7 +59,7 @@ export const CommentForm = ({ addComment }) => {
       {error ? (
         <p style={{ color: "red", textAlign: "center" }}>{error}</p>
       ) : null}
-      <Button type="submit">{isLoading ? <Loader /> : "Submit"}</Button>
+      <Button type="submit">{isLoading ? <Loader /> : "Envoyer"}</Button>
     </form>
   );
 };

@@ -4,7 +4,7 @@ export const GITHUB_USERNAME = "AyssKaizen";
 
 export const EMAIL = "test@email.com";
 
-export const FULL_NAME = "Mr. Hakka";
+export const FULL_NAME = "WebStudZ";
 
 export const SOCIAL_NETWORKS = [
   {
@@ -13,7 +13,7 @@ export const SOCIAL_NETWORKS = [
     icon: <SiTwitter />,
   },
   {
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/devayss/",
     name: "Linkedin",
     icon: <SiLinkedin />,
   },
