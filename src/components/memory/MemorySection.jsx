@@ -19,5 +19,7 @@ export const MemorySection = () => {
 };
 const ResetButton = () => {
   const { reset } = useMemoryCtx();
-  return <Button onClick={reset}>Réinitialiser le plateau</Button>;
+  return (
+    <Button onClick={reset}>Réinitialiser le plateau à 24 ou 56 cartes</Button>
+  );
 };

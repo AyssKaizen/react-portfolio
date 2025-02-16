@@ -45,6 +45,37 @@ const animals = [
   "🐦",
 ];
 
+const alphabet = [
+  "ت",
+  "أ",
+  "ب",
+  "ث",
+  "ج",
+  "ح",
+  "خ",
+  "د",
+  "ذ",
+  "ر",
+  "ز",
+  "س",
+  "ش",
+  "ص",
+  "ض",
+  "ط",
+  "ظ",
+  "ع",
+  "غ",
+  "ف",
+  "ق",
+  "ك",
+  "ل",
+  "م",
+  "ن",
+  "هـ",
+  "و",
+  "ي",
+];
+
 export const CARD_STATE = {
   HIDE: "hide",
   FIND: "find",
@@ -52,7 +83,8 @@ export const CARD_STATE = {
 };
 
 export const getInitialMemory = () => {
-  return shuffle([...animals, ...animals]).map((v, i) => ({
+  const data = Math.random() > 0.5 ? animals : alphabet;
+  return shuffle([...data, ...data]).map((v, i) => ({
     id: `card-${v}-${i}`,
     emoji: v,
     state: CARD_STATE.HIDE,

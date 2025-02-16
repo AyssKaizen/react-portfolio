@@ -31,10 +31,17 @@ export const MemoryBoard = () => {
       </Typography>
     );
   }
+  const sizeBoardClass =
+    cards.length === 56
+      ? "grid grid-cols-8 grid-rows-6 gap-5 w-max"
+      : "grid grid-cols-6 grid-rows-6 gap-5 w-max";
 
   return (
     <>
       <TryCount />
+      <Typography className="mb-5 text-center">
+        {cards.length === 56 ? "Jeu de 56 cartes" : "Jeu de 24 cartes"}
+      </Typography>
       <Switch value={isMultiplayer} setValue={setIsMultiplayer} />
       {isMultiplayer && (
         <div>
@@ -88,7 +95,7 @@ export const MemoryBoard = () => {
           )}
         </div>
       )}
-      <div className="grid grid-cols-6 grid-rows-6 gap-5 w-max">
+      <div className={sizeBoardClass}>
         {gameAllowed() &&
           cards.map((card) => (
             <MemoryCard
